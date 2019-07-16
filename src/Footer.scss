@@ -1,0 +1,43 @@
+$pink: rgb(251, 59, 68);
+$green: #ffffff;
+$bg-color:   rgb(251, 59, 68);
+
+.Footer {
+  width: 100%;
+  height: 200px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+  @if (lightness($bg-color) >50) {
+    color: black;
+  } @else {
+    color: white;
+  }
+  .social-media {
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 1em;
+      padding: 0.5em;
+      background-color: white;
+    }
+  }
+  p {
+    .heart {
+      color: black;
+    }
+    .guillaume {
+      color: $green;
+    }
+    .wcs {
+      color: white;
+    }
+    a {
+      text-decoration: none;
+      color: $pink;
+    }
+  }
+}
