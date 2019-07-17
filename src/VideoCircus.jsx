@@ -1,28 +1,14 @@
 import React from 'react';
-import YouTube from 'react-youtube';
+import './VideoCircus.scss';
  
 class VideoCircus extends React.Component {
   render() {
-    const opts = {
-      height: '400',
-      width: '100%',
-      playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1
-      }
-    };
- 
+    
     return (
-      <YouTube
-        videoId="S6hj9N1eTHQ"
-        opts={opts}
-        onReady={this._onReady}
-      />
+      <div className="VideoCircus">
+      <video id="video" src="/images/circus.mp4" type="video/mp4" playsInline autoPlay muted loop></video>
+      </div>
     );
-  }
- 
-  _onReady(event) {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
   }
 }
 

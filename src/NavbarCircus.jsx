@@ -5,8 +5,8 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink } from 'reactstrap';
+  NavItem } from 'reactstrap';
+  import { NavLink } from 'react-router-dom';
   import './NavbarCircus.scss';
 
 export default class NavbarCircus extends React.Component {
@@ -31,14 +31,14 @@ export default class NavbarCircus extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink exact to="/">Accueil</NavLink>
+              <NavItem eventKey="Accueil">
+                <NavLink activeClassName="active" exact to="/">Accueil</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink to="/animaux">Animaux</NavLink>
+              <NavItem eventKey="Animaux">
+                <NavLink activeClassName="active" to="/animaux">Animaux</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink to="/tarifs">Tarifs</NavLink>
+              <NavItem eventKey="Spectacles">
+                <NavLink activeClassName="active" to="/shows">Spectacles</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

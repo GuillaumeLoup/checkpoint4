@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Form, FormGroup, Label, Input } from 'reactstrap';
 import { NotificationContainer, NotificationManager } from 'react-notifications';
+import './ModifyShow.scss';
 
 class ModifyShow extends Component {
   constructor(props) {
@@ -49,12 +50,33 @@ class ModifyShow extends Component {
     event.preventDefault();
     NotificationManager.success('', 'Show modifié !', 3000);
   }
+ 
+
+handleDelete = () => {
+    const id = this.props.match.params.id;
+    const config = {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    };
+    fetch(`http://localhost:3000/api/shows/${id}`, config)
+      .then((res) => {
+        if (res.error) {
+          NotificationManager.error('', 'Erreur sur la suppression du show', 3000);
+        } else {
+          NotificationManager.success('', 'Show supprimé de la base de donnée', 3000);
+        }
+      });
+  }
+
+
   render() {
 
     console.log(this.state)
     return (
       <div className="ModifyShow">
-        <h1>Saisie d'un Show</h1>
+        <h1>M<span className="under-text">odification d'un Sho</span>w</h1>
          <Form onSubmit={this.handleSubmit}>
         <FormGroup row>
           <Label htmlFor="name" sm={2} size="lg">Nom:</Label>
@@ -112,8 +134,9 @@ class ModifyShow extends Component {
           </Col>
         </FormGroup>
        <div className="form-data">
-              <input type="submit" value="Envoyer" />
+              <input className="button-sub" type="submit" value="Envoyer" />
             </div>
+            <button className="button-sub" type="button" onClick={this.handleDelete}>Supprimer le show</button>
       </Form>
       <NotificationContainer />
       </div>

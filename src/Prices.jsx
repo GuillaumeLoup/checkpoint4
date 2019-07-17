@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Table } from 'reactstrap';
+import './Prices.scss';
 
 class Prices extends Component {
   constructor(props){
@@ -17,10 +18,9 @@ class Prices extends Component {
     }))
   }
 render() {
-  console.log(this.state.shows)
   return(
     <div className="Prices">
-      <h1>Nos Tarifs</h1>
+      <h1>N<span className="under-text">os Tarif</span>s</h1>
        <Table dark>
         <thead>
           <tr>
@@ -36,8 +36,8 @@ render() {
           <tr>
             <th scope="row"></th>
             <td>{show.name}</td>
-            <td>{show.childrenprice}</td>
-            <td>{show.adultprice}</td>
+            <td>{show.childrenprice}€</td>
+            <td>{show.adultprice}€</td>
           </tr>
         </tbody>)
         }

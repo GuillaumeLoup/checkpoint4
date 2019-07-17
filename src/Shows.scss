@@ -1,12 +1,35 @@
 .Shows{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   hr{
-      border-top: 1px solid white;
+      border-top: 1px solid rgb(251, 59, 68);
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 30px;
       margin-bottom: 30px;
     }
     img{
-      width: 100%;
+      width:600px;
+      margin-bottom: 40px;
     }
+    h1{
+      margin: 50px;
+    }
+    p{
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    .under-text{
+    border-bottom: 2px solid rgb(251, 59, 68);
+    padding-bottom: 5px;
+  }
+  @media screen and (min-width: 768px){
+    
+  }
+   @media screen and (max-width: 768px){
+        img{
+          width: 100%;
+        }
+  }
 }

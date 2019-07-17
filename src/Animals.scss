@@ -4,12 +4,22 @@
     height: 50px;
     color: white;
     background-color: rgb(251, 59, 68);
-    border-radius: 20px;
+    border-radius: 2px;
+    border: grey;
+    box-shadow:1px 1px 5px 5px grey;
     margin: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   img{
     margin-top: 30px;
     width: 100%;
+  }
+  .under-text{
+    border-bottom: 2px solid rgb(251, 59, 68);
+    padding-bottom: 5px;
+  }
+  h1{
+    margin: 50px;
   }
 }

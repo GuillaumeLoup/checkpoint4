@@ -19,8 +19,12 @@ class Shows extends Component {
 
     return(
       <div className="Shows">
+        <h1>N<span className="under-text">os Spectacle</span>s</h1>
+  
        {
-         this.state.shows.map(show => <div>
+         this.state.shows.map(show => 
+         <div>
+
            <h1>{show.name}</h1>
            <p>prix par adulte: {show.adultprice}</p>
            <p>prix par enfant: {show.childrenprice}</p>
@@ -29,6 +33,7 @@ class Shows extends Component {
            <hr />
          </div>)
        }
+      
       </div>
     )
     }

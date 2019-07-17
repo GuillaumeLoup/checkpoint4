@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { NotificationContainer, NotificationManager } from 'react-notifications';
 import { Col, Form, FormGroup, Label, Input } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+import './ChangeShow.scss';
 
 class ChangeShow extends Component{
   constructor(props){
@@ -26,7 +28,6 @@ class ChangeShow extends Component{
             },
             body: JSON.stringify(this.state)
         }
-        console.log(config.body)
         const url =`http://localhost:3000/api/shows`;
         fetch(url, config)
         .then(res => res.json())
@@ -43,7 +44,7 @@ class ChangeShow extends Component{
   render() {
     return(
       <div className="ChangeShow">
-        <h1>Saisie d'un Show</h1>
+        <h1>S<span className="under-text">aisie d'un Sho</span>w</h1>
              <Form onSubmit={this.handleSubmit}>
         <FormGroup row>
           <Label htmlFor="name" sm={2} size="lg">Nom:</Label>
@@ -101,10 +102,13 @@ class ChangeShow extends Component{
           </Col>
         </FormGroup>
        <div className="form-data">
-              <input type="submit" value="Envoyer" />
+              <input className="button-sub" type="submit" value="Envoyer" />
             </div>
       </Form>
       <NotificationContainer />
+      <NavLink activeClassName="active" to="/modify/1">
+        <button className="put-button" type="button">cliquez ici pour  aller modifier une friche</button>
+      </NavLink>
       </div>
     )
   }
