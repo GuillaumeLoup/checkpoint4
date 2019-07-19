@@ -4,6 +4,7 @@ import Description from './Description';
 import Animals from './Animals';
 import Prices from './Prices';
 import './Home.scss';
+import NosShows from './NosShows';
 
 class Home extends Component {
 render() {
@@ -14,6 +15,8 @@ render() {
       <Description />
       <hr />
       <Animals />
+      <hr />
+      <NosShows />
       <hr />
       <Prices />
     </div>

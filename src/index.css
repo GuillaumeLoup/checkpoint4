@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
 body {
   margin: 0;
   background-color: black;
- font-family: 'Boogaloo', cursive;
+ font-family: 'Boogaloo','Comfortaa', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

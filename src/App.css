@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: black;
+ /* background-color: black;*/
+ background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/images/10.jpg');
   color: white;
 }
 

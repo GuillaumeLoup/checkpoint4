@@ -19,9 +19,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/animaux" component={AllsAnimals} />
         <Route path="/shows" component={Shows} />
-        <Route path="/change" component={ChangeShow} />
+        <PrivateRoute path="/change" component={ChangeShow} />
         <Route path="/connection" component={SignIn} />
-        <Route path="/modify/:id" component={ModifyShow} />
+        <PrivateRoute path="/modify/:id" component={ModifyShow} />
         <PrivateRoute exact path="/adminhome" component={ChangeShow} />
       </Switch>
       <Footer />
