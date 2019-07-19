@@ -8,7 +8,15 @@
     margin: 80px;
   }
   Table{
-    margin-bottom: 80px;
-    width: 100%
+    margin-bottom: 160px;
+    width: 93%;
+    margin-left: 3.5%;
+  }
+   @media screen and (max-width: 768px){
+        Table{
+          margin-bottom: 160px;
+    width: 93%;
+    margin-left: 2.5%;
+        }
   }
 }
