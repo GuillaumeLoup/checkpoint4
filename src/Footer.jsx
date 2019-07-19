@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="Footer" id="footer">
       <div className="social-media">
-        <a target="_blank" rel="noopener noreferrer" href="https://fr.linkedin.com">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/guillaume-loup/">
           <img src="/images/linkedin-icon.svg" alt="facebook" />
         </a>
         <a target="_blank" rel="noopener noreferrer" href="https://twitter.com">
@@ -13,8 +13,7 @@ function Footer() {
         </a>
       </div>
       <p>
-        Made with
-        <span className="heart"> &hearts; </span>
+        Made
         by
         <span className="guillaume">
          Guillaume Loup

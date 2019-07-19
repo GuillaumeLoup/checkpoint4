@@ -1,5 +1,5 @@
 $pink: rgb(251, 59, 68);
-$green: #ffffff;
+$white: #ffffff;
 $bg-color:   rgb(251, 59, 68);
 
 .Footer {
@@ -18,19 +18,16 @@ $bg-color:   rgb(251, 59, 68);
   }
   .social-media {
     img {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       margin: 1em;
       padding: 0.5em;
       background-color: white;
     }
   }
   p {
-    .heart {
-      color: black;
-    }
     .guillaume {
-      color: $green;
+      color: $white;
     }
     .wcs {
       color: white;

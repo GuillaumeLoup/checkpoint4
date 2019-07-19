@@ -123,7 +123,7 @@ handleDelete = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="description" sm={2} size="lg">Description</Label>
+          <Label htmlFor="description" sm={2} size="lg">Description:</Label>
           <Col sm={10}>
             <Input type="text"
                 id="description"

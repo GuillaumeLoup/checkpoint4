@@ -91,7 +91,7 @@ class ChangeShow extends Component{
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="description" sm={2} size="lg">Description</Label>
+          <Label htmlFor="description" sm={2} size="lg">Description:</Label>
           <Col sm={10}>
             <Input type="text"
                 id="description"
@@ -107,7 +107,7 @@ class ChangeShow extends Component{
       </Form>
       <NotificationContainer />
       <NavLink activeClassName="active" to="/modify/1">
-        <button className="put-button" type="button">cliquez ici pour  aller modifier une friche</button>
+        <button className="put-button" type="button">cliquez ici pour  aller modifier un spectacle</button>
       </NavLink>
       </div>
     )
